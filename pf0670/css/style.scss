@@ -1,0 +1,60 @@
+$text-color: #ffffff;
+$back-color: #191970;
+$font-asap: "Asap Condensed";
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-asap, sans-serif;
+}
+
+.botao {
+    color: $text-color;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: $back-color;
+    font-size: 0.9em;
+    border-radius: 3px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $back-color;
+
+    a {
+        font-weight: 800;
+        font-size: 2rem;
+        font-family: $font-asap, sans-serif;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+
+        li {
+            text-align: center;
+            width: 100%;
+
+            a {
+                display: inline-block;
+                padding: 10px 0;
+                width: 100%;
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+    }
+}
