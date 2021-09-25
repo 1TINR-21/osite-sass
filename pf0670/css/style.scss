@@ -1,0 +1,221 @@
+$text-color: #ffffff;
+$back-color: #191970;
+$font-asap: "Asap Condensed";
+html {
+    font-size: 16px;
+
+    body {
+        font-family: "Nunito", sans-serif;
+
+        h1,
+        h2,
+        h3 {
+            font-family: $font-asap, sans-serif;
+        }
+
+        .botao {
+            color: $text-color;
+            text-decoration: none;
+            padding: 10px 30px;
+            background-color: $back-color;
+            font-size: 0.9em;
+            border-radius: 3px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $back-color;
+
+            a {
+                font-weight: 800;
+                font-size: 2rem;
+                font-family: $font-asap, sans-serif;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                padding: 0;
+                width: 100%;
+
+                li {
+                    text-align: center;
+                    width: 100%;
+
+                    a {
+                        display: inline-block;
+                        padding: 10px 0;
+                        width: 100%;
+                        text-decoration: none;
+                        color: $text-color;
+                    }
+                }
+            }
+        } //FIM NAV-BAR
+
+        //INICIO CABEÇALHO
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("../img/fundo-pc.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: $text-color;
+            text-align: center;
+            padding: 20px;
+
+            h1 {
+                color: $text-color;
+            }
+
+            p {
+                margin-bottom: 2em;
+            }
+        } //FIM CABEÇALHO
+
+        //INICIO SOBRE
+        #sobre {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px 10px 20px 20px;
+            background-color: $back-color;
+            color: $text-color;
+
+            h2 {
+                margin-bottom: 2.5em;
+                max-width: 1000px;
+            }
+
+            p {
+                color: $text-color;
+            }
+
+            .botao {
+                background-color: #f1f1f1;
+                color: #1c1c1c;
+            }
+        } //FIM SOBRE
+
+        //INICIO SERVIÇOS
+        #servicos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+
+                img {
+                    width: 80%;
+                    transform: scale(80%);
+                    transition: ease-in transform 0.5s;
+                }
+
+                img:hover {
+                    transform: scale(100%);
+                }
+
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+        } //FIM SERVIÇOS
+        //INICIO FOTOS
+        #fotos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+
+            h2 {
+                margin-bottom: 20px;
+            }
+        } //FIM FOTOS
+        //INICIO CONTATO
+        #contato {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 20px;
+
+            h2 {
+                color: #000000;
+            }
+        } //FIM CONTATO
+        //INICIO RODAPÉ
+        footer {
+            text-align: center;
+            background-color: $back-color;
+            color: $text-color;
+            padding: 15px;
+
+            .botao {
+                padding-top: 2px 0;
+                border: 1px solid $text-color;
+            }
+        } //FIM RODAPÉ
+
+        //@MEDIA QUERIES
+        @media screen and (min-width: 768px) {
+            //NAV
+            nav {
+                flex-direction: row;
+                justify-content: space-around;
+
+                ul {
+                    flex-direction: row;
+                    width: 70%;
+                }
+            }
+            //NAV
+            //CABEÇALHO
+            header {
+                height: 60vh;
+                justify-content: center;
+            }
+            //CABEÇALHO
+            //SOBRE
+            #sobre {
+                height: 30vh;
+                justify-content: center;
+                min-height: 250px;
+            }
+            //SOBRE
+            //SERVIÇOS
+            #servicos {
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                max-width: 1000px;
+                margin: 0 auto;
+
+                h2 {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                div {
+                    flex-grow: 1;
+                    flex-basis: 150px;
+                    padding: 0 10px;
+                }
+            }
+            //SERVIÇOS
+        }
+        //@MEDIA QUERIES
+    } //FIM DO BODY
+} //FIM DO BODY
