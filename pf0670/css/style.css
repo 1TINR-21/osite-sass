@@ -2,17 +2,17 @@ html {
   font-size: 16px;
 }
 
-body {
+html body {
   font-family: "Nunito", sans-serif;
 }
 
-h1,
-h2,
-h3 {
+html body h1,
+html body h2,
+html body h3 {
   font-family: "Asap Condensed", sans-serif;
 }
 
-.botao {
+html body .botao {
   color: #ffffff;
   text-decoration: none;
   padding: 10px 30px;
@@ -21,7 +21,7 @@ h3 {
   border-radius: 3px;
 }
 
-nav {
+html body nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,13 +35,13 @@ nav {
   background-color: #191970;
 }
 
-nav a {
+html body nav a {
   font-weight: 800;
   font-size: 2rem;
   font-family: "Asap Condensed", sans-serif;
 }
 
-nav ul {
+html body nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,16 +57,226 @@ nav ul {
   width: 100%;
 }
 
-nav ul li {
+html body nav ul li {
   text-align: center;
   width: 100%;
 }
 
-nav ul li a {
+html body nav ul li a {
   display: inline-block;
   padding: 10px 0;
   width: 100%;
   text-decoration: none;
   color: #ffffff;
+}
+
+html body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/fundo-pc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+html body header h1 {
+  color: #ffffff;
+}
+
+html body header p {
+  margin-bottom: 2em;
+}
+
+html body #sobre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: #191970;
+  color: #ffffff;
+}
+
+html body #sobre h2 {
+  margin-bottom: 2.5em;
+  max-width: 1000px;
+}
+
+html body #sobre p {
+  color: #ffffff;
+}
+
+html body #sobre .botao {
+  background-color: #f1f1f1;
+  color: #1c1c1c;
+}
+
+html body #servicos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+html body #servicos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+html body #servicos div img {
+  width: 80%;
+  -webkit-transform: scale(80%);
+          transform: scale(80%);
+  -webkit-transition: ease-in transform 0.5s;
+  transition: ease-in transform 0.5s;
+}
+
+html body #servicos div img:hover {
+  -webkit-transform: scale(100%);
+          transform: scale(100%);
+}
+
+html body #servicos div h2 {
+  margin-bottom: 20px;
+}
+
+html body #fotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+html body #fotos h2 {
+  margin-bottom: 20px;
+}
+
+html body #contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+html body #contato h2 {
+  color: #000000;
+}
+
+html body footer {
+  text-align: center;
+  background-color: #191970;
+  color: #ffffff;
+  padding: 15px;
+}
+
+html body footer .botao {
+  padding-top: 2px 0;
+  border: 1px solid #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  html body nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  html body nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70%;
+  }
+  html body header {
+    height: 60vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body #sobre {
+    height: 30vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 250px;
+  }
+  html body #servicos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  html body #servicos h2 {
+    text-align: center;
+    width: 100%;
+  }
+  html body #servicos div {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 150px;
+        flex-basis: 150px;
+    padding: 0 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
